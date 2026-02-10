@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paapu ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top, rgba(255,200,220,0.95), rgba(255,120,170,0.9)),
+    linear-gradient(120deg, #ff7aa2, #ff9fbf);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Glow */
+.glow {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: rgba(255,170,200,0.65);
+  filter: blur(200px);
+  animation: glowPulse 6s infinite alternate;
+}
+@keyframes glowPulse { to { transform: scale(1.3); } }
+
+/* Slides */
+.slide {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.slide.active { display: flex; }
+
+/* Card */
+.card {
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(20px);
+  border-radius: 38px;
+  padding: 48px 36px;
+  max-width: 520px;
+  box-shadow: 0 45px 90px rgba(0,0,0,0.35);
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 54px;
+}
+
+.name {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 2.1;
+}
+
+/* Panda emoji */
+.cute {
+  font-size: 60px;
+  margin-bottom: 14px;
+  animation: bounce 2.5s infinite;
+}
+@keyframes bounce { 50% { transform: translateY(-10px); } }
+
+.tap {
+  margin-top: 22px;
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+/* Heart photo frame */
+.heart-frame {
+  width: 260px;
+  height: 240px;
+  margin: auto;
+  clip-path: path("M130 230 C-30 120 50 -20 130 60 C210 -20 290 120 130 230 Z");
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(255,190,210,1);
+  animation: heartPulse 2.5s infinite;
+}
+.heart-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes heartPulse { 50% { transform: scale(1.06); } }
+
+/* Typing ending */
+.typing {
+  font-size: 26px;
+  text-shadow: 0 0 22px #fff;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards, blink .8s infinite;
+}
+@keyframes typing { to { width: 100%; } }
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* Rose petals */
+.petal {
+  position: absolute;
+  top: -10px;
+  font-size: 18px;
+  opacity: 0.9;
+  animation: fall linear infinite;
+  filter: drop-shadow(0 0 6px rgba(255,170,190,0.9));
+}
+@keyframes fall {
+  to { transform: translateY(110vh) rotate(200deg); opacity: 0; }
+}
+
+/* Safe mobile fit only */
+@media (max-width: 600px) {
+  .slide { padding: 20px; }
+  .card { max-width: 95%; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<!-- SLIDE 1 -->
+<div class="slide active">
+  <div class="card">
+    <div class="cute">💗🐼</div>
+    <h1>Happy Valentine’s Day</h1>
+    <div class="name">Paapu 🌸</div>
+    <p>
+      This page is not just a wish,<br>
+      it is everything my heart wants to tell you.
+    </p>
+    <div class="tap">Tap anywhere 💖</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 - Photo with animation -->
+<div class="slide">
+  <div class="card">
+    <img src="C:\Users\Akash J\Documents\for her\photo.jpeg" alt="Paapu ❤️" class="animated-photo" style="
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    ">
+    <p style="margin-top:22px;">
+      This picture means the world to me,<br>
+      because it reminds me<br>
+      how lucky I am to have you.
+    </p>
+  </div>
+</div>
+
+<style>
+/* Animation for slide 2 photo only */
+.animated-photo {
+  animation: photoFloat 4s ease-in-out infinite alternate;
+}
+
+@keyframes photoFloat {
+  0% { transform: scale(1) translateY(0px); }
+  50% { transform: scale(1.05) translateY(-10px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+</style>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+  <div class="card">
+    <div class="cute">🎀💗</div>
+    <p>
+      From the day you came into my life,<br>
+      my heart found its calm.<br><br>
+      Your smile heals me,<br>
+      your voice comforts me,<br>
+      your love completes me.
+    </p>
+  </div>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+  <div class="card">
+    <div class="cute">🫂🌍</div>
+    <p>
+      Sometimes I don’t say it out loud,<br>
+      but my heart knows the truth.<br><br>
+      You are my comfort,<br>
+      my safe place,<br>
+      and the reason I smile without reason.
+    </p>
+  </div>
+</div>
+
+<!-- SLIDE 5 -->
+<div class="slide">
+  <div class="card">
+    <div class="cute">💘👑</div>
+    <p>
+      No matter how hard life gets,<br>
+      I want to face everything with you.<br><br>
+      Holding your hand,<br>
+      choosing you every day,<br>
+      loving you a little more each moment.
+    </p>
+  </div>
+</div>
+
+<!-- SLIDE 6 -->
+<div class="slide">
+  <div class="card">
+    <div class="cute">💞💎</div>
+    <p>
+      With you, even ordinary moments<br>
+      feel special and beautiful.<br><br>
+      I don’t need a perfect life,<br>
+      I just need you beside me.
+    </p>
+  </div>
+</div>
+
+<!-- SLIDE 7 -->
+<div class="slide">
+  <div class="card">
+    <div class="cute">💋🧿</div>
+    <p>
+      In my heart,<br>
+      you are not just my love…<br><br>
+      You are already my wife,<br>
+      my future,<br>
+      my forever.
+    </p>
+  </div>
+</div>
+
+<!-- SLIDE 8 -->
+<div class="slide">
+  <div class="card">
+    <div class="cute">🐻💗🐼</div>
+    <div class="typing">I love you Hendthi Ma ❤️</div>
+    <p style="margin-top:26px;">Forever and always 🫶</p>
+    <p style="margin-top:18px;font-family:'Great Vibes',cursive;font-size:20px;">
+      – Yours, Ganda 💖
+    </p>
+  </div>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="C:\Users\Akash J\Documents\for her\song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+let musicStarted = false;
+
+document.body.addEventListener("click", () => {
+  if (!musicStarted) {
+    document.getElementById("bgMusic").play();
+    musicStarted = true;
+  }
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+});
+
+/* Rose petal rain */
+function createPetal() {
+  const petal = document.createElement("div");
+  petal.classList.add("petal");
+  petal.innerHTML = "🌸";
+  petal.style.left = Math.random() * 100 + "vw";
+  petal.style.animationDuration = (4 + Math.random() * 4) + "s";
+  petal.style.fontSize = (14 + Math.random() * 14) + "px";
+  document.body.appendChild(petal);
+  setTimeout(() => petal.remove(), 8000);
+}
+setInterval(createPetal, 350);
+</script>
+
+</body>
+</html>
